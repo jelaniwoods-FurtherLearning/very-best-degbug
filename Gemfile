@@ -59,6 +59,7 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'draft_generators', github: 'firstdraft/draft_generators', branch: 'summer-2019'
+  gem "faker"
   gem 'letter_opener'
   gem 'meta_request'
 end
