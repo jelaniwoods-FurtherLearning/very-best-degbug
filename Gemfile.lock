@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/faker-ruby/faker.git
+  revision: d13a99ffe924936b061bef638885fa2d4e6dedfe
+  branch: master
+  specs:
+    faker (2.10.2)
+      i18n (>= 1.6, < 2)
+
+GIT
   remote: https://github.com/firstdraft/draft_generators.git
   revision: 4f5ab605dc1278071f566566a969f10ccb0de76f
   branch: summer-2019
@@ -156,8 +164,6 @@ GEM
     factory_bot_rails (5.1.1)
       factory_bot (~> 5.1.0)
       railties (>= 4.2.0)
-    faker (2.10.2)
-      i18n (>= 1.6, < 2)
     ffi (1.12.2)
     ffi (1.12.2-java)
     ffi (1.12.2-x64-mingw32)
@@ -431,7 +437,7 @@ DEPENDENCIES
   draft_generators!
   execjs
   factory_bot_rails
-  faker
+  faker!
   grade_runner!
   jbuilder (~> 2.7)
   letter_opener

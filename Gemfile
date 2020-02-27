@@ -43,6 +43,7 @@ gem 'rack-timeout', require: 'rack/timeout/base'
 gem 'sprockets', '< 4'
 gem 'sassc-rails'
 gem 'execjs'
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 gem 'therubyracer', platforms: :ruby
 group :development, :test do
   gem 'awesome_print'
@@ -59,7 +60,6 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'draft_generators', github: 'firstdraft/draft_generators', branch: 'summer-2019'
-  gem "faker"
   gem 'letter_opener'
   gem 'meta_request'
 end
