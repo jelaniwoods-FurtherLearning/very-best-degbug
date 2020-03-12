@@ -4,8 +4,9 @@ USER root
 
 RUN apt-get update
 
-COPY .irbrc ~/.irbrc
+COPY .irbrc ~
 WORKDIR /myapp
+COPY .irbrc .
 
 USER gitpod
 
@@ -21,4 +22,6 @@ RUN /bin/bash -l -c "rvm use --default 2.6.5"
 RUN /bin/bash -l -c "bundle update --bundler"
 RUN /bin/bash -l -c "bundle install"
 COPY .irbrc ~
+RUN /bin/bash -l -c "cat .irbrc"
+RUN /bin/bash -l -c "cp .irbrc ~/.irbrc"
 RUN /bin/bash -l -c "cat ~/.irbrc"
