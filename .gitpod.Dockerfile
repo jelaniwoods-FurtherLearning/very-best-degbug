@@ -25,3 +25,4 @@ COPY .irbrc ~
 RUN /bin/bash -l -c "cat .irbrc"
 RUN /bin/bash -l -c "cp .irbrc ~/.irbrc"
 RUN /bin/bash -l -c "cat ~/.irbrc"
+RUN /bin/bash -l -c "gem uninstall -i /home/gitpod/.rvm/rubies/ruby-2.6.5/lib/ruby/gems/2.6.0 minitest"
